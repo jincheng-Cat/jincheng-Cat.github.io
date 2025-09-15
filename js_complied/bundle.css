@@ -1,326 +1,157 @@
-html {
-  --primary-rgb: 22, 22, 22;
-  --primary: rgb(22, 22, 22);
-  --primary-50: #f3f3f3;
-  --primary-100: #e8e8e8;
-  --primary-150: gainsboro;
-  --primary-200: #d0d0d0;
-  --primary-250: #c5c5c5;
-  --primary-300: #b9b9b9;
-  --primary-350: #adadad;
-  --primary-400: #a2a2a2;
-  --primary-450: #969696;
-  --primary-500: #8b8b8b;
-  --primary-550: #7f7f7f;
-  --primary-600: #737373;
-  --primary-650: #686868;
-  --primary-700: #5c5c5c;
-  --primary-750: #505050;
-  --primary-800: #454545;
-  --primary-850: #393939;
-  --primary-900: #2d2d2d;
-  --primary-950: #222222;
-  --primary-high: #2d2d2d;
-  --primary-midium: #5c5c5c;
-  --primary-low-mid: #8b8b8b;
-  --primary-low: #d0d0d0;
-  --primary-very-low: white;
-  --secondary-rgb: 255, 255, 255;
-  --secondary: rgb(255, 255, 255);
-  --secondary-50: #222222;
-  --secondary-100: #2d2d2d;
-  --secondary-150: #393939;
-  --secondary-200: #454545;
-  --secondary-250: #505050;
-  --secondary-300: #5c5c5c;
-  --secondary-350: #686868;
-  --secondary-400: #737373;
-  --secondary-450: #7f7f7f;
-  --secondary-500: #8b8b8b;
-  --secondary-550: #969696;
-  --secondary-600: #a2a2a2;
-  --secondary-650: #adadad;
-  --secondary-700: #b9b9b9;
-  --secondary-750: #c5c5c5;
-  --secondary-800: #d0d0d0;
-  --secondary-850: gainsboro;
-  --secondary-900: #e8e8e8;
-  --secondary-950: #f3f3f3;
-  --secondary-high: #e8e8e8;
-  --secondary-midium: #b9b9b9;
-  --secondary-low-mid: #8b8b8b;
-  --secondary-low: #454545;
-  --secondary-very-low: #161616;
-  --tertiary-rgb: 62, 82, 214;
-  --tertiary: rgb(62, 82, 214);
-  --tertiary-50: #f5f6fd;
-  --tertiary-100: #eceefb;
-  --tertiary-150: #e2e5f9;
-  --tertiary-200: #d8dcf7;
-  --tertiary-250: #cfd4f5;
-  --tertiary-300: #c5cbf3;
-  --tertiary-350: #bbc2f1;
-  --tertiary-400: #b2baef;
-  --tertiary-450: #a8b1ed;
-  --tertiary-500: #9fa9eb;
-  --tertiary-550: #95a0e8;
-  --tertiary-600: #8b97e6;
-  --tertiary-650: #828fe4;
-  --tertiary-700: #7886e2;
-  --tertiary-750: #6e7de0;
-  --tertiary-800: #6575de;
-  --tertiary-850: #5b6cdc;
-  --tertiary-900: #5163da;
-  --tertiary-950: #485bd8;
-  --tertiary-high: #5163da;
-  --tertiary-midium: #7886e2;
-  --tertiary-low-mid: #9fa9eb;
-  --tertiary-low: #d8dcf7;
-  --tertiary-very-low: white;
+aside.language-name {
+  position: absolute !important;
+  top: 0 !important;
+  right: 0 !important;
+  color: #ccc !important;
+  text-align: right !important;
+  font-size: 0.75em !important;
+  padding: 5px 10px 0 !important;
+  line-height: 15px !important;
+  height: 15px !important;
+  font-weight: 600 !important;
+  user-select: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    --primary-rgb: 255, 255, 255;
-    --primary: rgb(255, 255, 255);
-    --primary-50: #333333;
-    --primary-100: #3e3e3e;
-    --primary-150: #484848;
-    --primary-200: #535353;
-    --primary-250: #5e5e5e;
-    --primary-300: dimgray;
-    --primary-350: #737373;
-    --primary-400: #7e7e7e;
-    --primary-450: #898989;
-    --primary-500: #949494;
-    --primary-550: #9e9e9e;
-    --primary-600: darkgray;
-    --primary-650: #b4b4b4;
-    --primary-700: #bfbfbf;
-    --primary-750: #c9c9c9;
-    --primary-800: #d4d4d4;
-    --primary-850: #dfdfdf;
-    --primary-900: #eaeaea;
-    --primary-950: #f4f4f4;
-    --primary-high: #eaeaea;
-    --primary-midium: #bfbfbf;
-    --primary-low-mid: #949494;
-    --primary-low: #535353;
-    --primary-very-low: #282828;
-    --secondary-rgb: 40, 40, 40;
-    --secondary: rgb(40, 40, 40);
-    --secondary-50: #f4f4f4;
-    --secondary-100: #eaeaea;
-    --secondary-150: #dfdfdf;
-    --secondary-200: #d4d4d4;
-    --secondary-250: #c9c9c9;
-    --secondary-300: #bfbfbf;
-    --secondary-350: #b4b4b4;
-    --secondary-400: darkgray;
-    --secondary-450: #9e9e9e;
-    --secondary-500: #949494;
-    --secondary-550: #898989;
-    --secondary-600: #7e7e7e;
-    --secondary-650: #737373;
-    --secondary-700: dimgray;
-    --secondary-750: #5e5e5e;
-    --secondary-800: #535353;
-    --secondary-850: #484848;
-    --secondary-900: #3e3e3e;
-    --secondary-950: #333333;
-    --secondary-high: #3e3e3e;
-    --secondary-midium: dimgray;
-    --secondary-low-mid: #949494;
-    --secondary-low: #d4d4d4;
-    --secondary-very-low: white;
-    --tertiary-rgb: 181, 206, 255;
-    --tertiary: rgb(181, 206, 255);
-    --tertiary-50: #2f3033;
-    --tertiary-100: #36393e;
-    --tertiary-150: #3d4148;
-    --tertiary-200: #444953;
-    --tertiary-250: #4b525e;
-    --tertiary-300: #525a69;
-    --tertiary-350: #596273;
-    --tertiary-400: #606a7e;
-    --tertiary-450: #677389;
-    --tertiary-500: #6f7b94;
-    --tertiary-550: #76839e;
-    --tertiary-600: #7d8ca9;
-    --tertiary-650: #8494b4;
-    --tertiary-700: #8b9cbf;
-    --tertiary-750: #92a5c9;
-    --tertiary-800: #99add4;
-    --tertiary-850: #a0b5df;
-    --tertiary-900: #a7bdea;
-    --tertiary-950: #aec6f4;
-    --tertiary-high: #a7bdea;
-    --tertiary-midium: #8b9cbf;
-    --tertiary-low-mid: #6f7b94;
-    --tertiary-low: #444953;
-    --tertiary-very-low: #282828;
-  }
+figure.highlight {
+  position: relative !important;
+  margin: 1em 0 !important;
+  border-radius: 2px !important;
+  line-height: 1.1em !important;
+  background-color: var(--secondary-950) !important;
+  overflow-x: auto !important;
+  padding-left: 1em;
 }
-html[theme=dark] {
-  --primary-rgb: 255, 255, 255;
-  --primary: rgb(255, 255, 255);
-  --primary-50: #333333;
-  --primary-100: #3e3e3e;
-  --primary-150: #484848;
-  --primary-200: #535353;
-  --primary-250: #5e5e5e;
-  --primary-300: dimgray;
-  --primary-350: #737373;
-  --primary-400: #7e7e7e;
-  --primary-450: #898989;
-  --primary-500: #949494;
-  --primary-550: #9e9e9e;
-  --primary-600: darkgray;
-  --primary-650: #b4b4b4;
-  --primary-700: #bfbfbf;
-  --primary-750: #c9c9c9;
-  --primary-800: #d4d4d4;
-  --primary-850: #dfdfdf;
-  --primary-900: #eaeaea;
-  --primary-950: #f4f4f4;
-  --primary-high: #eaeaea;
-  --primary-midium: #bfbfbf;
-  --primary-low-mid: #949494;
-  --primary-low: #535353;
-  --primary-very-low: #282828;
-  --secondary-rgb: 40, 40, 40;
-  --secondary: rgb(40, 40, 40);
-  --secondary-50: #f4f4f4;
-  --secondary-100: #eaeaea;
-  --secondary-150: #dfdfdf;
-  --secondary-200: #d4d4d4;
-  --secondary-250: #c9c9c9;
-  --secondary-300: #bfbfbf;
-  --secondary-350: #b4b4b4;
-  --secondary-400: darkgray;
-  --secondary-450: #9e9e9e;
-  --secondary-500: #949494;
-  --secondary-550: #898989;
-  --secondary-600: #7e7e7e;
-  --secondary-650: #737373;
-  --secondary-700: dimgray;
-  --secondary-750: #5e5e5e;
-  --secondary-800: #535353;
-  --secondary-850: #484848;
-  --secondary-900: #3e3e3e;
-  --secondary-950: #333333;
-  --secondary-high: #3e3e3e;
-  --secondary-midium: dimgray;
-  --secondary-low-mid: #949494;
-  --secondary-low: #d4d4d4;
-  --secondary-very-low: white;
-  --tertiary-rgb: 181, 206, 255;
-  --tertiary: rgb(181, 206, 255);
-  --tertiary-50: #2f3033;
-  --tertiary-100: #36393e;
-  --tertiary-150: #3d4148;
-  --tertiary-200: #444953;
-  --tertiary-250: #4b525e;
-  --tertiary-300: #525a69;
-  --tertiary-350: #596273;
-  --tertiary-400: #606a7e;
-  --tertiary-450: #677389;
-  --tertiary-500: #6f7b94;
-  --tertiary-550: #76839e;
-  --tertiary-600: #7d8ca9;
-  --tertiary-650: #8494b4;
-  --tertiary-700: #8b9cbf;
-  --tertiary-750: #92a5c9;
-  --tertiary-800: #99add4;
-  --tertiary-850: #a0b5df;
-  --tertiary-900: #a7bdea;
-  --tertiary-950: #aec6f4;
-  --tertiary-high: #a7bdea;
-  --tertiary-midium: #8b9cbf;
-  --tertiary-low-mid: #6f7b94;
-  --tertiary-low: #444953;
-  --tertiary-very-low: #282828;
+figure.highlight figcaption {
+  padding: 5px 10px 0 0;
+  font-size: 0.8em;
+  line-height: 1em;
+  font-family: var(--mono-font-face);
+  opacity: 0.7;
+}
+figure.highlight table,
+figure.highlight tr,
+figure.highlight td {
+  width: 100% !important;
+  border-collapse: collapse !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  border: none !important;
+}
+figure.highlight .gutter {
+  width: fit-content !important;
+  line-height: 1.5em !important;
+  font-size: 15px;
+  padding: 0em 1em 0em 0em !important;
+  user-select: none;
+}
+figure.highlight .gutter pre {
+  color: rgb(212, 148, 75) !important;
+}
+body.disable-line-number figure.highlight .gutter {
+  display: none;
+}
+figure.highlight .code pre {
+  padding: 1.2em 1em 1.2em 0 !important;
+  line-height: 1.5em !important;
+  margin: 0 !important;
 }
 
-html[theme=light] {
-  --primary-rgb: 22, 22, 22;
-  --primary: rgb(22, 22, 22);
-  --primary-50: #f3f3f3;
-  --primary-100: #e8e8e8;
-  --primary-150: gainsboro;
-  --primary-200: #d0d0d0;
-  --primary-250: #c5c5c5;
-  --primary-300: #b9b9b9;
-  --primary-350: #adadad;
-  --primary-400: #a2a2a2;
-  --primary-450: #969696;
-  --primary-500: #8b8b8b;
-  --primary-550: #7f7f7f;
-  --primary-600: #737373;
-  --primary-650: #686868;
-  --primary-700: #5c5c5c;
-  --primary-750: #505050;
-  --primary-800: #454545;
-  --primary-850: #393939;
-  --primary-900: #2d2d2d;
-  --primary-950: #222222;
-  --primary-high: #2d2d2d;
-  --primary-midium: #5c5c5c;
-  --primary-low-mid: #8b8b8b;
-  --primary-low: #d0d0d0;
-  --primary-very-low: white;
-  --secondary-rgb: 255, 255, 255;
-  --secondary: rgb(255, 255, 255);
-  --secondary-50: #222222;
-  --secondary-100: #2d2d2d;
-  --secondary-150: #393939;
-  --secondary-200: #454545;
-  --secondary-250: #505050;
-  --secondary-300: #5c5c5c;
-  --secondary-350: #686868;
-  --secondary-400: #737373;
-  --secondary-450: #7f7f7f;
-  --secondary-500: #8b8b8b;
-  --secondary-550: #969696;
-  --secondary-600: #a2a2a2;
-  --secondary-650: #adadad;
-  --secondary-700: #b9b9b9;
-  --secondary-750: #c5c5c5;
-  --secondary-800: #d0d0d0;
-  --secondary-850: gainsboro;
-  --secondary-900: #e8e8e8;
-  --secondary-950: #f3f3f3;
-  --secondary-high: #e8e8e8;
-  --secondary-midium: #b9b9b9;
-  --secondary-low-mid: #8b8b8b;
-  --secondary-low: #454545;
-  --secondary-very-low: #161616;
-  --tertiary-rgb: 62, 82, 214;
-  --tertiary: rgb(62, 82, 214);
-  --tertiary-50: #f5f6fd;
-  --tertiary-100: #eceefb;
-  --tertiary-150: #e2e5f9;
-  --tertiary-200: #d8dcf7;
-  --tertiary-250: #cfd4f5;
-  --tertiary-300: #c5cbf3;
-  --tertiary-350: #bbc2f1;
-  --tertiary-400: #b2baef;
-  --tertiary-450: #a8b1ed;
-  --tertiary-500: #9fa9eb;
-  --tertiary-550: #95a0e8;
-  --tertiary-600: #8b97e6;
-  --tertiary-650: #828fe4;
-  --tertiary-700: #7886e2;
-  --tertiary-750: #6e7de0;
-  --tertiary-800: #6575de;
-  --tertiary-850: #5b6cdc;
-  --tertiary-900: #5163da;
-  --tertiary-950: #485bd8;
-  --tertiary-high: #5163da;
-  --tertiary-midium: #7886e2;
-  --tertiary-low-mid: #9fa9eb;
-  --tertiary-low: #d8dcf7;
-  --tertiary-very-low: white;
+pre code.hljs {
+  display: block;
+  position: relative !important;
+  margin: 1em 0 !important;
+  border-radius: 2px !important;
+  line-height: 1.5em !important;
+  background-color: var(--secondary-950) !important;
+  overflow-x: auto !important;
+  padding: 1em 1em 1em 1em !important;
+  line-height: 1.5em !important;
+  margin: 0 !important;
+}
+
+pre code {
+  background-color: transparent;
+}
+pre .function .keyword,
+pre .constant {
+  color: #0092db !important;
+}
+pre .keyword,
+pre .attribute {
+  color: #e96900 !important;
+}
+pre .number,
+pre .literal {
+  color: #ae81ff !important;
+}
+pre .tag,
+pre .tag .title,
+pre .change,
+pre .winutils,
+pre .flow,
+pre .lisp .title,
+pre .clojure .built_in,
+pre .nginx .title,
+pre .tex .special {
+  color: #2973b7 !important;
+}
+pre .symbol,
+pre .symbol .string,
+pre .value,
+pre .regexp {
+  color: #42b983 !important;
+}
+pre .title {
+  color: #83b917 !important;
+}
+pre .tag .value,
+pre .string,
+pre .subst,
+pre .haskell .type,
+pre .preprocessor,
+pre .ruby .class .parent,
+pre .built_in,
+pre .sql .aggregate,
+pre .django .template_tag,
+pre .django .variable,
+pre .smalltalk .class,
+pre .javadoc,
+pre .django .filter .argument,
+pre .smalltalk .localvars,
+pre .smalltalk .array,
+pre .attr_selector,
+pre .pseudo,
+pre .addition,
+pre .stream,
+pre .envvar,
+pre .apache .tag,
+pre .apache .cbracket,
+pre .tex .command,
+pre .prompt {
+  color: #42b983 !important;
+}
+pre .comment,
+pre .java .annotation,
+pre .python .decorator,
+pre .template_comment,
+pre .pi,
+pre .doctype,
+pre .shebang,
+pre .apache .sqbracket,
+pre .tex .formula {
+  color: #b3b3b3 !important;
+}
+pre .deletion {
+  color: #ba4545 !important;
+}
+pre .coffeescript .javascript,
+pre .javascript .xml,
+pre .tex .formula,
+pre .xml .javascript,
+pre .xml .vbscript,
+pre .xml .css,
+pre .xml .cdata {
+  opacity: 0.5 !important;
 }html {
   --primary-rgb: 22, 22, 22;
   --primary: rgb(22, 22, 22);
@@ -795,505 +626,329 @@ textarea {
   font-family: inherit;
   font-size: 1em;
   padding: 7px;
-}aside.language-name {
-  position: absolute !important;
-  top: 0 !important;
-  right: 0 !important;
-  color: #ccc !important;
-  text-align: right !important;
-  font-size: 0.75em !important;
-  padding: 5px 10px 0 !important;
-  line-height: 15px !important;
-  height: 15px !important;
-  font-weight: 600 !important;
-  user-select: none;
-}
-
-figure.highlight {
-  position: relative !important;
-  margin: 1em 0 !important;
-  border-radius: 2px !important;
-  line-height: 1.1em !important;
-  background-color: var(--secondary-950) !important;
-  overflow-x: auto !important;
-  padding-left: 1em;
-}
-figure.highlight figcaption {
-  padding: 5px 10px 0 0;
-  font-size: 0.8em;
-  line-height: 1em;
-  font-family: var(--mono-font-face);
-  opacity: 0.7;
-}
-figure.highlight table,
-figure.highlight tr,
-figure.highlight td {
-  width: 100% !important;
-  border-collapse: collapse !important;
-  padding: 0 !important;
-  margin: 0 !important;
-  border: none !important;
-}
-figure.highlight .gutter {
-  width: fit-content !important;
-  line-height: 1.5em !important;
-  font-size: 15px;
-  padding: 0em 1em 0em 0em !important;
-  user-select: none;
-}
-figure.highlight .gutter pre {
-  color: rgb(212, 148, 75) !important;
-}
-body.disable-line-number figure.highlight .gutter {
-  display: none;
-}
-figure.highlight .code pre {
-  padding: 1.2em 1em 1.2em 0 !important;
-  line-height: 1.5em !important;
-  margin: 0 !important;
-}
-
-pre code.hljs {
-  display: block;
-  position: relative !important;
-  margin: 1em 0 !important;
-  border-radius: 2px !important;
-  line-height: 1.5em !important;
-  background-color: var(--secondary-950) !important;
-  overflow-x: auto !important;
-  padding: 1em 1em 1em 1em !important;
-  line-height: 1.5em !important;
-  margin: 0 !important;
-}
-
-pre code {
-  background-color: transparent;
-}
-pre .function .keyword,
-pre .constant {
-  color: #0092db !important;
-}
-pre .keyword,
-pre .attribute {
-  color: #e96900 !important;
-}
-pre .number,
-pre .literal {
-  color: #ae81ff !important;
-}
-pre .tag,
-pre .tag .title,
-pre .change,
-pre .winutils,
-pre .flow,
-pre .lisp .title,
-pre .clojure .built_in,
-pre .nginx .title,
-pre .tex .special {
-  color: #2973b7 !important;
-}
-pre .symbol,
-pre .symbol .string,
-pre .value,
-pre .regexp {
-  color: #42b983 !important;
-}
-pre .title {
-  color: #83b917 !important;
-}
-pre .tag .value,
-pre .string,
-pre .subst,
-pre .haskell .type,
-pre .preprocessor,
-pre .ruby .class .parent,
-pre .built_in,
-pre .sql .aggregate,
-pre .django .template_tag,
-pre .django .variable,
-pre .smalltalk .class,
-pre .javadoc,
-pre .django .filter .argument,
-pre .smalltalk .localvars,
-pre .smalltalk .array,
-pre .attr_selector,
-pre .pseudo,
-pre .addition,
-pre .stream,
-pre .envvar,
-pre .apache .tag,
-pre .apache .cbracket,
-pre .tex .command,
-pre .prompt {
-  color: #42b983 !important;
-}
-pre .comment,
-pre .java .annotation,
-pre .python .decorator,
-pre .template_comment,
-pre .pi,
-pre .doctype,
-pre .shebang,
-pre .apache .sqbracket,
-pre .tex .formula {
-  color: #b3b3b3 !important;
-}
-pre .deletion {
-  color: #ba4545 !important;
-}
-pre .coffeescript .javascript,
-pre .javascript .xml,
-pre .tex .formula,
-pre .xml .javascript,
-pre .xml .vbscript,
-pre .xml .css,
-pre .xml .cdata {
-  opacity: 0.5 !important;
-}pre,
-html[theme=light] pre {
-  color: #24292e;
-}
-pre .hljs-doctag,
-pre .hljs-keyword,
-pre .hljs-meta .hljs-keyword,
-pre .hljs-template-tag,
-pre .hljs-template-variable,
-pre .hljs-type,
-pre .hljs-variable.language_,
-html[theme=light] pre .hljs-doctag,
-html[theme=light] pre .hljs-keyword,
-html[theme=light] pre .hljs-meta .hljs-keyword,
-html[theme=light] pre .hljs-template-tag,
-html[theme=light] pre .hljs-template-variable,
-html[theme=light] pre .hljs-type,
-html[theme=light] pre .hljs-variable.language_ {
-  /* prettylights-syntax-keyword */
-  color: #d73a49;
-}
-pre .hljs-title,
-pre .hljs-title.class_,
-pre .hljs-title.class_.inherited__,
-pre .hljs-title.function_,
-html[theme=light] pre .hljs-title,
-html[theme=light] pre .hljs-title.class_,
-html[theme=light] pre .hljs-title.class_.inherited__,
-html[theme=light] pre .hljs-title.function_ {
-  /* prettylights-syntax-entity */
-  color: #6f42c1;
-}
-pre .hljs-attr,
-pre .hljs-attribute,
-pre .hljs-literal,
-pre .hljs-meta,
-pre .hljs-number,
-pre .hljs-operator,
-pre .hljs-variable,
-pre .hljs-selector-attr,
-pre .hljs-selector-class,
-pre .hljs-selector-id,
-html[theme=light] pre .hljs-attr,
-html[theme=light] pre .hljs-attribute,
-html[theme=light] pre .hljs-literal,
-html[theme=light] pre .hljs-meta,
-html[theme=light] pre .hljs-number,
-html[theme=light] pre .hljs-operator,
-html[theme=light] pre .hljs-variable,
-html[theme=light] pre .hljs-selector-attr,
-html[theme=light] pre .hljs-selector-class,
-html[theme=light] pre .hljs-selector-id {
-  /* prettylights-syntax-constant */
-  color: #005cc5;
-}
-pre .hljs-regexp,
-pre .hljs-string,
-pre .hljs-meta .hljs-string,
-html[theme=light] pre .hljs-regexp,
-html[theme=light] pre .hljs-string,
-html[theme=light] pre .hljs-meta .hljs-string {
-  /* prettylights-syntax-string */
-  color: #032f62;
-}
-pre .hljs-built_in,
-pre .hljs-symbol,
-html[theme=light] pre .hljs-built_in,
-html[theme=light] pre .hljs-symbol {
-  /* prettylights-syntax-variable */
-  color: #e36209;
-}
-pre .hljs-comment,
-pre .hljs-code,
-pre .hljs-formula,
-html[theme=light] pre .hljs-comment,
-html[theme=light] pre .hljs-code,
-html[theme=light] pre .hljs-formula {
-  /* prettylights-syntax-comment */
-  color: #6a737d;
-}
-pre .hljs-name,
-pre .hljs-quote,
-pre .hljs-selector-tag,
-pre .hljs-selector-pseudo,
-html[theme=light] pre .hljs-name,
-html[theme=light] pre .hljs-quote,
-html[theme=light] pre .hljs-selector-tag,
-html[theme=light] pre .hljs-selector-pseudo {
-  /* prettylights-syntax-entity-tag */
-  color: #22863a;
-}
-pre .hljs-subst,
-html[theme=light] pre .hljs-subst {
-  /* prettylights-syntax-storage-modifier-import */
-  color: #24292e;
-}
-pre .hljs-section,
-html[theme=light] pre .hljs-section {
-  /* prettylights-syntax-markup-heading */
-  color: #005cc5;
-  font-weight: bold;
-}
-pre .hljs-bullet,
-html[theme=light] pre .hljs-bullet {
-  /* prettylights-syntax-markup-list */
-  color: #735c0f;
-}
-pre .hljs-emphasis,
-html[theme=light] pre .hljs-emphasis {
-  /* prettylights-syntax-markup-italic */
-  color: #24292e;
-  font-style: italic;
-}
-pre .hljs-strong,
-html[theme=light] pre .hljs-strong {
-  /* prettylights-syntax-markup-bold */
-  color: #24292e;
-  font-weight: bold;
-}
-pre .hljs-addition,
-html[theme=light] pre .hljs-addition {
-  /* prettylights-syntax-markup-inserted */
-  color: #22863a;
-  background-color: #f0fff4;
-}
-pre .hljs-deletion,
-html[theme=light] pre .hljs-deletion {
-  /* prettylights-syntax-markup-deleted */
-  color: #b31d28;
-  background-color: #ffeef0;
-}
-pre .hljs-char.escape_,
-pre .hljs-link,
-pre .hljs-params,
-pre .hljs-property,
-pre .hljs-punctuation,
-pre .hljs-tag,
-html[theme=light] pre .hljs-char.escape_,
-html[theme=light] pre .hljs-link,
-html[theme=light] pre .hljs-params,
-html[theme=light] pre .hljs-property,
-html[theme=light] pre .hljs-punctuation,
-html[theme=light] pre .hljs-tag {
-  color: #e36209;
+}html {
+  --primary-rgb: 22, 22, 22;
+  --primary: rgb(22, 22, 22);
+  --primary-50: #f3f3f3;
+  --primary-100: #e8e8e8;
+  --primary-150: gainsboro;
+  --primary-200: #d0d0d0;
+  --primary-250: #c5c5c5;
+  --primary-300: #b9b9b9;
+  --primary-350: #adadad;
+  --primary-400: #a2a2a2;
+  --primary-450: #969696;
+  --primary-500: #8b8b8b;
+  --primary-550: #7f7f7f;
+  --primary-600: #737373;
+  --primary-650: #686868;
+  --primary-700: #5c5c5c;
+  --primary-750: #505050;
+  --primary-800: #454545;
+  --primary-850: #393939;
+  --primary-900: #2d2d2d;
+  --primary-950: #222222;
+  --primary-high: #2d2d2d;
+  --primary-midium: #5c5c5c;
+  --primary-low-mid: #8b8b8b;
+  --primary-low: #d0d0d0;
+  --primary-very-low: white;
+  --secondary-rgb: 255, 255, 255;
+  --secondary: rgb(255, 255, 255);
+  --secondary-50: #222222;
+  --secondary-100: #2d2d2d;
+  --secondary-150: #393939;
+  --secondary-200: #454545;
+  --secondary-250: #505050;
+  --secondary-300: #5c5c5c;
+  --secondary-350: #686868;
+  --secondary-400: #737373;
+  --secondary-450: #7f7f7f;
+  --secondary-500: #8b8b8b;
+  --secondary-550: #969696;
+  --secondary-600: #a2a2a2;
+  --secondary-650: #adadad;
+  --secondary-700: #b9b9b9;
+  --secondary-750: #c5c5c5;
+  --secondary-800: #d0d0d0;
+  --secondary-850: gainsboro;
+  --secondary-900: #e8e8e8;
+  --secondary-950: #f3f3f3;
+  --secondary-high: #e8e8e8;
+  --secondary-midium: #b9b9b9;
+  --secondary-low-mid: #8b8b8b;
+  --secondary-low: #454545;
+  --secondary-very-low: #161616;
+  --tertiary-rgb: 62, 82, 214;
+  --tertiary: rgb(62, 82, 214);
+  --tertiary-50: #f5f6fd;
+  --tertiary-100: #eceefb;
+  --tertiary-150: #e2e5f9;
+  --tertiary-200: #d8dcf7;
+  --tertiary-250: #cfd4f5;
+  --tertiary-300: #c5cbf3;
+  --tertiary-350: #bbc2f1;
+  --tertiary-400: #b2baef;
+  --tertiary-450: #a8b1ed;
+  --tertiary-500: #9fa9eb;
+  --tertiary-550: #95a0e8;
+  --tertiary-600: #8b97e6;
+  --tertiary-650: #828fe4;
+  --tertiary-700: #7886e2;
+  --tertiary-750: #6e7de0;
+  --tertiary-800: #6575de;
+  --tertiary-850: #5b6cdc;
+  --tertiary-900: #5163da;
+  --tertiary-950: #485bd8;
+  --tertiary-high: #5163da;
+  --tertiary-midium: #7886e2;
+  --tertiary-low-mid: #9fa9eb;
+  --tertiary-low: #d8dcf7;
+  --tertiary-very-low: white;
 }
 
 @media (prefers-color-scheme: dark) {
-  pre {
-    color: #c9d1d9;
-  }
-  pre .hljs-doctag,
-  pre .hljs-keyword,
-  pre .hljs-meta .hljs-keyword,
-  pre .hljs-template-tag,
-  pre .hljs-template-variable,
-  pre .hljs-type,
-  pre .hljs-variable.language_ {
-    /* prettylights-syntax-keyword */
-    color: #ff7b72;
-  }
-  pre .hljs-title,
-  pre .hljs-title.class_,
-  pre .hljs-title.class_.inherited__,
-  pre .hljs-title.function_ {
-    /* prettylights-syntax-entity */
-    color: #d2a8ff;
-  }
-  pre .hljs-attr,
-  pre .hljs-attribute,
-  pre .hljs-literal,
-  pre .hljs-meta,
-  pre .hljs-number,
-  pre .hljs-operator,
-  pre .hljs-variable,
-  pre .hljs-selector-attr,
-  pre .hljs-selector-class,
-  pre .hljs-selector-id {
-    /* prettylights-syntax-constant */
-    color: #79c0ff;
-  }
-  pre .hljs-regexp,
-  pre .hljs-string,
-  pre .hljs-meta .hljs-string {
-    /* prettylights-syntax-string */
-    color: #a5d6ff;
-  }
-  pre .hljs-built_in,
-  pre .hljs-symbol {
-    /* prettylights-syntax-variable */
-    color: #ffa657;
-  }
-  pre .hljs-comment,
-  pre .hljs-code,
-  pre .hljs-formula {
-    /* prettylights-syntax-comment */
-    color: #8b949e;
-  }
-  pre .hljs-name,
-  pre .hljs-quote,
-  pre .hljs-selector-tag,
-  pre .hljs-selector-pseudo {
-    /* prettylights-syntax-entity-tag */
-    color: #7ee787;
-  }
-  pre .hljs-subst {
-    /* prettylights-syntax-storage-modifier-import */
-    color: #c9d1d9;
-  }
-  pre .hljs-section {
-    /* prettylights-syntax-markup-heading */
-    color: #1f6feb;
-    font-weight: bold;
-  }
-  pre .hljs-bullet {
-    /* prettylights-syntax-markup-list */
-    color: #f2cc60;
-  }
-  pre .hljs-emphasis {
-    /* prettylights-syntax-markup-italic */
-    color: #c9d1d9;
-    font-style: italic;
-  }
-  pre .hljs-strong {
-    /* prettylights-syntax-markup-bold */
-    color: #c9d1d9;
-    font-weight: bold;
-  }
-  pre .hljs-addition {
-    /* prettylights-syntax-markup-inserted */
-    color: #aff5b4;
-    background-color: #033a16;
-  }
-  pre .hljs-deletion {
-    /* prettylights-syntax-markup-deleted */
-    color: #ffdcd7;
-    background-color: #67060c;
-  }
-  pre .hljs-char.escape_,
-  pre .hljs-link,
-  pre .hljs-params,
-  pre .hljs-property,
-  pre .hljs-punctuation,
-  pre .hljs-tag {
-    /* purposely ignored */
-    color: #c9d1d9;
+  html {
+    --primary-rgb: 255, 255, 255;
+    --primary: rgb(255, 255, 255);
+    --primary-50: #333333;
+    --primary-100: #3e3e3e;
+    --primary-150: #484848;
+    --primary-200: #535353;
+    --primary-250: #5e5e5e;
+    --primary-300: dimgray;
+    --primary-350: #737373;
+    --primary-400: #7e7e7e;
+    --primary-450: #898989;
+    --primary-500: #949494;
+    --primary-550: #9e9e9e;
+    --primary-600: darkgray;
+    --primary-650: #b4b4b4;
+    --primary-700: #bfbfbf;
+    --primary-750: #c9c9c9;
+    --primary-800: #d4d4d4;
+    --primary-850: #dfdfdf;
+    --primary-900: #eaeaea;
+    --primary-950: #f4f4f4;
+    --primary-high: #eaeaea;
+    --primary-midium: #bfbfbf;
+    --primary-low-mid: #949494;
+    --primary-low: #535353;
+    --primary-very-low: #282828;
+    --secondary-rgb: 40, 40, 40;
+    --secondary: rgb(40, 40, 40);
+    --secondary-50: #f4f4f4;
+    --secondary-100: #eaeaea;
+    --secondary-150: #dfdfdf;
+    --secondary-200: #d4d4d4;
+    --secondary-250: #c9c9c9;
+    --secondary-300: #bfbfbf;
+    --secondary-350: #b4b4b4;
+    --secondary-400: darkgray;
+    --secondary-450: #9e9e9e;
+    --secondary-500: #949494;
+    --secondary-550: #898989;
+    --secondary-600: #7e7e7e;
+    --secondary-650: #737373;
+    --secondary-700: dimgray;
+    --secondary-750: #5e5e5e;
+    --secondary-800: #535353;
+    --secondary-850: #484848;
+    --secondary-900: #3e3e3e;
+    --secondary-950: #333333;
+    --secondary-high: #3e3e3e;
+    --secondary-midium: dimgray;
+    --secondary-low-mid: #949494;
+    --secondary-low: #d4d4d4;
+    --secondary-very-low: white;
+    --tertiary-rgb: 181, 206, 255;
+    --tertiary: rgb(181, 206, 255);
+    --tertiary-50: #2f3033;
+    --tertiary-100: #36393e;
+    --tertiary-150: #3d4148;
+    --tertiary-200: #444953;
+    --tertiary-250: #4b525e;
+    --tertiary-300: #525a69;
+    --tertiary-350: #596273;
+    --tertiary-400: #606a7e;
+    --tertiary-450: #677389;
+    --tertiary-500: #6f7b94;
+    --tertiary-550: #76839e;
+    --tertiary-600: #7d8ca9;
+    --tertiary-650: #8494b4;
+    --tertiary-700: #8b9cbf;
+    --tertiary-750: #92a5c9;
+    --tertiary-800: #99add4;
+    --tertiary-850: #a0b5df;
+    --tertiary-900: #a7bdea;
+    --tertiary-950: #aec6f4;
+    --tertiary-high: #a7bdea;
+    --tertiary-midium: #8b9cbf;
+    --tertiary-low-mid: #6f7b94;
+    --tertiary-low: #444953;
+    --tertiary-very-low: #282828;
   }
 }
-html[theme=dark] pre {
-  color: #c9d1d9;
+html[theme=dark] {
+  --primary-rgb: 255, 255, 255;
+  --primary: rgb(255, 255, 255);
+  --primary-50: #333333;
+  --primary-100: #3e3e3e;
+  --primary-150: #484848;
+  --primary-200: #535353;
+  --primary-250: #5e5e5e;
+  --primary-300: dimgray;
+  --primary-350: #737373;
+  --primary-400: #7e7e7e;
+  --primary-450: #898989;
+  --primary-500: #949494;
+  --primary-550: #9e9e9e;
+  --primary-600: darkgray;
+  --primary-650: #b4b4b4;
+  --primary-700: #bfbfbf;
+  --primary-750: #c9c9c9;
+  --primary-800: #d4d4d4;
+  --primary-850: #dfdfdf;
+  --primary-900: #eaeaea;
+  --primary-950: #f4f4f4;
+  --primary-high: #eaeaea;
+  --primary-midium: #bfbfbf;
+  --primary-low-mid: #949494;
+  --primary-low: #535353;
+  --primary-very-low: #282828;
+  --secondary-rgb: 40, 40, 40;
+  --secondary: rgb(40, 40, 40);
+  --secondary-50: #f4f4f4;
+  --secondary-100: #eaeaea;
+  --secondary-150: #dfdfdf;
+  --secondary-200: #d4d4d4;
+  --secondary-250: #c9c9c9;
+  --secondary-300: #bfbfbf;
+  --secondary-350: #b4b4b4;
+  --secondary-400: darkgray;
+  --secondary-450: #9e9e9e;
+  --secondary-500: #949494;
+  --secondary-550: #898989;
+  --secondary-600: #7e7e7e;
+  --secondary-650: #737373;
+  --secondary-700: dimgray;
+  --secondary-750: #5e5e5e;
+  --secondary-800: #535353;
+  --secondary-850: #484848;
+  --secondary-900: #3e3e3e;
+  --secondary-950: #333333;
+  --secondary-high: #3e3e3e;
+  --secondary-midium: dimgray;
+  --secondary-low-mid: #949494;
+  --secondary-low: #d4d4d4;
+  --secondary-very-low: white;
+  --tertiary-rgb: 181, 206, 255;
+  --tertiary: rgb(181, 206, 255);
+  --tertiary-50: #2f3033;
+  --tertiary-100: #36393e;
+  --tertiary-150: #3d4148;
+  --tertiary-200: #444953;
+  --tertiary-250: #4b525e;
+  --tertiary-300: #525a69;
+  --tertiary-350: #596273;
+  --tertiary-400: #606a7e;
+  --tertiary-450: #677389;
+  --tertiary-500: #6f7b94;
+  --tertiary-550: #76839e;
+  --tertiary-600: #7d8ca9;
+  --tertiary-650: #8494b4;
+  --tertiary-700: #8b9cbf;
+  --tertiary-750: #92a5c9;
+  --tertiary-800: #99add4;
+  --tertiary-850: #a0b5df;
+  --tertiary-900: #a7bdea;
+  --tertiary-950: #aec6f4;
+  --tertiary-high: #a7bdea;
+  --tertiary-midium: #8b9cbf;
+  --tertiary-low-mid: #6f7b94;
+  --tertiary-low: #444953;
+  --tertiary-very-low: #282828;
 }
-html[theme=dark] pre .hljs-doctag,
-html[theme=dark] pre .hljs-keyword,
-html[theme=dark] pre .hljs-meta .hljs-keyword,
-html[theme=dark] pre .hljs-template-tag,
-html[theme=dark] pre .hljs-template-variable,
-html[theme=dark] pre .hljs-type,
-html[theme=dark] pre .hljs-variable.language_ {
-  /* prettylights-syntax-keyword */
-  color: #ff7b72;
-}
-html[theme=dark] pre .hljs-title,
-html[theme=dark] pre .hljs-title.class_,
-html[theme=dark] pre .hljs-title.class_.inherited__,
-html[theme=dark] pre .hljs-title.function_ {
-  /* prettylights-syntax-entity */
-  color: #d2a8ff;
-}
-html[theme=dark] pre .hljs-attr,
-html[theme=dark] pre .hljs-attribute,
-html[theme=dark] pre .hljs-literal,
-html[theme=dark] pre .hljs-meta,
-html[theme=dark] pre .hljs-number,
-html[theme=dark] pre .hljs-operator,
-html[theme=dark] pre .hljs-variable,
-html[theme=dark] pre .hljs-selector-attr,
-html[theme=dark] pre .hljs-selector-class,
-html[theme=dark] pre .hljs-selector-id {
-  /* prettylights-syntax-constant */
-  color: #79c0ff;
-}
-html[theme=dark] pre .hljs-regexp,
-html[theme=dark] pre .hljs-string,
-html[theme=dark] pre .hljs-meta .hljs-string {
-  /* prettylights-syntax-string */
-  color: #a5d6ff;
-}
-html[theme=dark] pre .hljs-built_in,
-html[theme=dark] pre .hljs-symbol {
-  /* prettylights-syntax-variable */
-  color: #ffa657;
-}
-html[theme=dark] pre .hljs-comment,
-html[theme=dark] pre .hljs-code,
-html[theme=dark] pre .hljs-formula {
-  /* prettylights-syntax-comment */
-  color: #8b949e;
-}
-html[theme=dark] pre .hljs-name,
-html[theme=dark] pre .hljs-quote,
-html[theme=dark] pre .hljs-selector-tag,
-html[theme=dark] pre .hljs-selector-pseudo {
-  /* prettylights-syntax-entity-tag */
-  color: #7ee787;
-}
-html[theme=dark] pre .hljs-subst {
-  /* prettylights-syntax-storage-modifier-import */
-  color: #c9d1d9;
-}
-html[theme=dark] pre .hljs-section {
-  /* prettylights-syntax-markup-heading */
-  color: #1f6feb;
-  font-weight: bold;
-}
-html[theme=dark] pre .hljs-bullet {
-  /* prettylights-syntax-markup-list */
-  color: #f2cc60;
-}
-html[theme=dark] pre .hljs-emphasis {
-  /* prettylights-syntax-markup-italic */
-  color: #c9d1d9;
-  font-style: italic;
-}
-html[theme=dark] pre .hljs-strong {
-  /* prettylights-syntax-markup-bold */
-  color: #c9d1d9;
-  font-weight: bold;
-}
-html[theme=dark] pre .hljs-addition {
-  /* prettylights-syntax-markup-inserted */
-  color: #aff5b4;
-  background-color: #033a16;
-}
-html[theme=dark] pre .hljs-deletion {
-  /* prettylights-syntax-markup-deleted */
-  color: #ffdcd7;
-  background-color: #67060c;
-}
-html[theme=dark] pre .hljs-char.escape_,
-html[theme=dark] pre .hljs-link,
-html[theme=dark] pre .hljs-params,
-html[theme=dark] pre .hljs-property,
-html[theme=dark] pre .hljs-punctuation,
-html[theme=dark] pre .hljs-tag {
-  /* purposely ignored */
-  color: #c9d1d9;
+
+html[theme=light] {
+  --primary-rgb: 22, 22, 22;
+  --primary: rgb(22, 22, 22);
+  --primary-50: #f3f3f3;
+  --primary-100: #e8e8e8;
+  --primary-150: gainsboro;
+  --primary-200: #d0d0d0;
+  --primary-250: #c5c5c5;
+  --primary-300: #b9b9b9;
+  --primary-350: #adadad;
+  --primary-400: #a2a2a2;
+  --primary-450: #969696;
+  --primary-500: #8b8b8b;
+  --primary-550: #7f7f7f;
+  --primary-600: #737373;
+  --primary-650: #686868;
+  --primary-700: #5c5c5c;
+  --primary-750: #505050;
+  --primary-800: #454545;
+  --primary-850: #393939;
+  --primary-900: #2d2d2d;
+  --primary-950: #222222;
+  --primary-high: #2d2d2d;
+  --primary-midium: #5c5c5c;
+  --primary-low-mid: #8b8b8b;
+  --primary-low: #d0d0d0;
+  --primary-very-low: white;
+  --secondary-rgb: 255, 255, 255;
+  --secondary: rgb(255, 255, 255);
+  --secondary-50: #222222;
+  --secondary-100: #2d2d2d;
+  --secondary-150: #393939;
+  --secondary-200: #454545;
+  --secondary-250: #505050;
+  --secondary-300: #5c5c5c;
+  --secondary-350: #686868;
+  --secondary-400: #737373;
+  --secondary-450: #7f7f7f;
+  --secondary-500: #8b8b8b;
+  --secondary-550: #969696;
+  --secondary-600: #a2a2a2;
+  --secondary-650: #adadad;
+  --secondary-700: #b9b9b9;
+  --secondary-750: #c5c5c5;
+  --secondary-800: #d0d0d0;
+  --secondary-850: gainsboro;
+  --secondary-900: #e8e8e8;
+  --secondary-950: #f3f3f3;
+  --secondary-high: #e8e8e8;
+  --secondary-midium: #b9b9b9;
+  --secondary-low-mid: #8b8b8b;
+  --secondary-low: #454545;
+  --secondary-very-low: #161616;
+  --tertiary-rgb: 62, 82, 214;
+  --tertiary: rgb(62, 82, 214);
+  --tertiary-50: #f5f6fd;
+  --tertiary-100: #eceefb;
+  --tertiary-150: #e2e5f9;
+  --tertiary-200: #d8dcf7;
+  --tertiary-250: #cfd4f5;
+  --tertiary-300: #c5cbf3;
+  --tertiary-350: #bbc2f1;
+  --tertiary-400: #b2baef;
+  --tertiary-450: #a8b1ed;
+  --tertiary-500: #9fa9eb;
+  --tertiary-550: #95a0e8;
+  --tertiary-600: #8b97e6;
+  --tertiary-650: #828fe4;
+  --tertiary-700: #7886e2;
+  --tertiary-750: #6e7de0;
+  --tertiary-800: #6575de;
+  --tertiary-850: #5b6cdc;
+  --tertiary-900: #5163da;
+  --tertiary-950: #485bd8;
+  --tertiary-high: #5163da;
+  --tertiary-midium: #7886e2;
+  --tertiary-low-mid: #9fa9eb;
+  --tertiary-low: #d8dcf7;
+  --tertiary-very-low: white;
 }.gt-container {
   box-sizing: border-box;
   font-size: 16px;
@@ -1642,6 +1297,351 @@ html[theme=dark] pre .hljs-tag {
   100% {
     transform: rotate(360deg);
   }
+}pre,
+html[theme=light] pre {
+  color: #24292e;
+}
+pre .hljs-doctag,
+pre .hljs-keyword,
+pre .hljs-meta .hljs-keyword,
+pre .hljs-template-tag,
+pre .hljs-template-variable,
+pre .hljs-type,
+pre .hljs-variable.language_,
+html[theme=light] pre .hljs-doctag,
+html[theme=light] pre .hljs-keyword,
+html[theme=light] pre .hljs-meta .hljs-keyword,
+html[theme=light] pre .hljs-template-tag,
+html[theme=light] pre .hljs-template-variable,
+html[theme=light] pre .hljs-type,
+html[theme=light] pre .hljs-variable.language_ {
+  /* prettylights-syntax-keyword */
+  color: #d73a49;
+}
+pre .hljs-title,
+pre .hljs-title.class_,
+pre .hljs-title.class_.inherited__,
+pre .hljs-title.function_,
+html[theme=light] pre .hljs-title,
+html[theme=light] pre .hljs-title.class_,
+html[theme=light] pre .hljs-title.class_.inherited__,
+html[theme=light] pre .hljs-title.function_ {
+  /* prettylights-syntax-entity */
+  color: #6f42c1;
+}
+pre .hljs-attr,
+pre .hljs-attribute,
+pre .hljs-literal,
+pre .hljs-meta,
+pre .hljs-number,
+pre .hljs-operator,
+pre .hljs-variable,
+pre .hljs-selector-attr,
+pre .hljs-selector-class,
+pre .hljs-selector-id,
+html[theme=light] pre .hljs-attr,
+html[theme=light] pre .hljs-attribute,
+html[theme=light] pre .hljs-literal,
+html[theme=light] pre .hljs-meta,
+html[theme=light] pre .hljs-number,
+html[theme=light] pre .hljs-operator,
+html[theme=light] pre .hljs-variable,
+html[theme=light] pre .hljs-selector-attr,
+html[theme=light] pre .hljs-selector-class,
+html[theme=light] pre .hljs-selector-id {
+  /* prettylights-syntax-constant */
+  color: #005cc5;
+}
+pre .hljs-regexp,
+pre .hljs-string,
+pre .hljs-meta .hljs-string,
+html[theme=light] pre .hljs-regexp,
+html[theme=light] pre .hljs-string,
+html[theme=light] pre .hljs-meta .hljs-string {
+  /* prettylights-syntax-string */
+  color: #032f62;
+}
+pre .hljs-built_in,
+pre .hljs-symbol,
+html[theme=light] pre .hljs-built_in,
+html[theme=light] pre .hljs-symbol {
+  /* prettylights-syntax-variable */
+  color: #e36209;
+}
+pre .hljs-comment,
+pre .hljs-code,
+pre .hljs-formula,
+html[theme=light] pre .hljs-comment,
+html[theme=light] pre .hljs-code,
+html[theme=light] pre .hljs-formula {
+  /* prettylights-syntax-comment */
+  color: #6a737d;
+}
+pre .hljs-name,
+pre .hljs-quote,
+pre .hljs-selector-tag,
+pre .hljs-selector-pseudo,
+html[theme=light] pre .hljs-name,
+html[theme=light] pre .hljs-quote,
+html[theme=light] pre .hljs-selector-tag,
+html[theme=light] pre .hljs-selector-pseudo {
+  /* prettylights-syntax-entity-tag */
+  color: #22863a;
+}
+pre .hljs-subst,
+html[theme=light] pre .hljs-subst {
+  /* prettylights-syntax-storage-modifier-import */
+  color: #24292e;
+}
+pre .hljs-section,
+html[theme=light] pre .hljs-section {
+  /* prettylights-syntax-markup-heading */
+  color: #005cc5;
+  font-weight: bold;
+}
+pre .hljs-bullet,
+html[theme=light] pre .hljs-bullet {
+  /* prettylights-syntax-markup-list */
+  color: #735c0f;
+}
+pre .hljs-emphasis,
+html[theme=light] pre .hljs-emphasis {
+  /* prettylights-syntax-markup-italic */
+  color: #24292e;
+  font-style: italic;
+}
+pre .hljs-strong,
+html[theme=light] pre .hljs-strong {
+  /* prettylights-syntax-markup-bold */
+  color: #24292e;
+  font-weight: bold;
+}
+pre .hljs-addition,
+html[theme=light] pre .hljs-addition {
+  /* prettylights-syntax-markup-inserted */
+  color: #22863a;
+  background-color: #f0fff4;
+}
+pre .hljs-deletion,
+html[theme=light] pre .hljs-deletion {
+  /* prettylights-syntax-markup-deleted */
+  color: #b31d28;
+  background-color: #ffeef0;
+}
+pre .hljs-char.escape_,
+pre .hljs-link,
+pre .hljs-params,
+pre .hljs-property,
+pre .hljs-punctuation,
+pre .hljs-tag,
+html[theme=light] pre .hljs-char.escape_,
+html[theme=light] pre .hljs-link,
+html[theme=light] pre .hljs-params,
+html[theme=light] pre .hljs-property,
+html[theme=light] pre .hljs-punctuation,
+html[theme=light] pre .hljs-tag {
+  color: #e36209;
+}
+
+@media (prefers-color-scheme: dark) {
+  pre {
+    color: #c9d1d9;
+  }
+  pre .hljs-doctag,
+  pre .hljs-keyword,
+  pre .hljs-meta .hljs-keyword,
+  pre .hljs-template-tag,
+  pre .hljs-template-variable,
+  pre .hljs-type,
+  pre .hljs-variable.language_ {
+    /* prettylights-syntax-keyword */
+    color: #ff7b72;
+  }
+  pre .hljs-title,
+  pre .hljs-title.class_,
+  pre .hljs-title.class_.inherited__,
+  pre .hljs-title.function_ {
+    /* prettylights-syntax-entity */
+    color: #d2a8ff;
+  }
+  pre .hljs-attr,
+  pre .hljs-attribute,
+  pre .hljs-literal,
+  pre .hljs-meta,
+  pre .hljs-number,
+  pre .hljs-operator,
+  pre .hljs-variable,
+  pre .hljs-selector-attr,
+  pre .hljs-selector-class,
+  pre .hljs-selector-id {
+    /* prettylights-syntax-constant */
+    color: #79c0ff;
+  }
+  pre .hljs-regexp,
+  pre .hljs-string,
+  pre .hljs-meta .hljs-string {
+    /* prettylights-syntax-string */
+    color: #a5d6ff;
+  }
+  pre .hljs-built_in,
+  pre .hljs-symbol {
+    /* prettylights-syntax-variable */
+    color: #ffa657;
+  }
+  pre .hljs-comment,
+  pre .hljs-code,
+  pre .hljs-formula {
+    /* prettylights-syntax-comment */
+    color: #8b949e;
+  }
+  pre .hljs-name,
+  pre .hljs-quote,
+  pre .hljs-selector-tag,
+  pre .hljs-selector-pseudo {
+    /* prettylights-syntax-entity-tag */
+    color: #7ee787;
+  }
+  pre .hljs-subst {
+    /* prettylights-syntax-storage-modifier-import */
+    color: #c9d1d9;
+  }
+  pre .hljs-section {
+    /* prettylights-syntax-markup-heading */
+    color: #1f6feb;
+    font-weight: bold;
+  }
+  pre .hljs-bullet {
+    /* prettylights-syntax-markup-list */
+    color: #f2cc60;
+  }
+  pre .hljs-emphasis {
+    /* prettylights-syntax-markup-italic */
+    color: #c9d1d9;
+    font-style: italic;
+  }
+  pre .hljs-strong {
+    /* prettylights-syntax-markup-bold */
+    color: #c9d1d9;
+    font-weight: bold;
+  }
+  pre .hljs-addition {
+    /* prettylights-syntax-markup-inserted */
+    color: #aff5b4;
+    background-color: #033a16;
+  }
+  pre .hljs-deletion {
+    /* prettylights-syntax-markup-deleted */
+    color: #ffdcd7;
+    background-color: #67060c;
+  }
+  pre .hljs-char.escape_,
+  pre .hljs-link,
+  pre .hljs-params,
+  pre .hljs-property,
+  pre .hljs-punctuation,
+  pre .hljs-tag {
+    /* purposely ignored */
+    color: #c9d1d9;
+  }
+}
+html[theme=dark] pre {
+  color: #c9d1d9;
+}
+html[theme=dark] pre .hljs-doctag,
+html[theme=dark] pre .hljs-keyword,
+html[theme=dark] pre .hljs-meta .hljs-keyword,
+html[theme=dark] pre .hljs-template-tag,
+html[theme=dark] pre .hljs-template-variable,
+html[theme=dark] pre .hljs-type,
+html[theme=dark] pre .hljs-variable.language_ {
+  /* prettylights-syntax-keyword */
+  color: #ff7b72;
+}
+html[theme=dark] pre .hljs-title,
+html[theme=dark] pre .hljs-title.class_,
+html[theme=dark] pre .hljs-title.class_.inherited__,
+html[theme=dark] pre .hljs-title.function_ {
+  /* prettylights-syntax-entity */
+  color: #d2a8ff;
+}
+html[theme=dark] pre .hljs-attr,
+html[theme=dark] pre .hljs-attribute,
+html[theme=dark] pre .hljs-literal,
+html[theme=dark] pre .hljs-meta,
+html[theme=dark] pre .hljs-number,
+html[theme=dark] pre .hljs-operator,
+html[theme=dark] pre .hljs-variable,
+html[theme=dark] pre .hljs-selector-attr,
+html[theme=dark] pre .hljs-selector-class,
+html[theme=dark] pre .hljs-selector-id {
+  /* prettylights-syntax-constant */
+  color: #79c0ff;
+}
+html[theme=dark] pre .hljs-regexp,
+html[theme=dark] pre .hljs-string,
+html[theme=dark] pre .hljs-meta .hljs-string {
+  /* prettylights-syntax-string */
+  color: #a5d6ff;
+}
+html[theme=dark] pre .hljs-built_in,
+html[theme=dark] pre .hljs-symbol {
+  /* prettylights-syntax-variable */
+  color: #ffa657;
+}
+html[theme=dark] pre .hljs-comment,
+html[theme=dark] pre .hljs-code,
+html[theme=dark] pre .hljs-formula {
+  /* prettylights-syntax-comment */
+  color: #8b949e;
+}
+html[theme=dark] pre .hljs-name,
+html[theme=dark] pre .hljs-quote,
+html[theme=dark] pre .hljs-selector-tag,
+html[theme=dark] pre .hljs-selector-pseudo {
+  /* prettylights-syntax-entity-tag */
+  color: #7ee787;
+}
+html[theme=dark] pre .hljs-subst {
+  /* prettylights-syntax-storage-modifier-import */
+  color: #c9d1d9;
+}
+html[theme=dark] pre .hljs-section {
+  /* prettylights-syntax-markup-heading */
+  color: #1f6feb;
+  font-weight: bold;
+}
+html[theme=dark] pre .hljs-bullet {
+  /* prettylights-syntax-markup-list */
+  color: #f2cc60;
+}
+html[theme=dark] pre .hljs-emphasis {
+  /* prettylights-syntax-markup-italic */
+  color: #c9d1d9;
+  font-style: italic;
+}
+html[theme=dark] pre .hljs-strong {
+  /* prettylights-syntax-markup-bold */
+  color: #c9d1d9;
+  font-weight: bold;
+}
+html[theme=dark] pre .hljs-addition {
+  /* prettylights-syntax-markup-inserted */
+  color: #aff5b4;
+  background-color: #033a16;
+}
+html[theme=dark] pre .hljs-deletion {
+  /* prettylights-syntax-markup-deleted */
+  color: #ffdcd7;
+  background-color: #67060c;
+}
+html[theme=dark] pre .hljs-char.escape_,
+html[theme=dark] pre .hljs-link,
+html[theme=dark] pre .hljs-params,
+html[theme=dark] pre .hljs-property,
+html[theme=dark] pre .hljs-punctuation,
+html[theme=dark] pre .hljs-tag {
+  /* purposely ignored */
+  color: #c9d1d9;
 }i.fa {
   font-size: 80%;
   color: var(--primary-low-mid);
